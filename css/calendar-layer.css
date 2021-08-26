@@ -1,0 +1,22 @@
+@import './task-layer.css';
+@import './task-cell-layer.css';
+/* @import './calendar-day.css'; */
+@import './calendar-day-layer.css';
+/* @import './timezone-cell.css'; */
+@import './hour-cell-layer.css';
+@import './current-time-layer.css';
+
+.calendarLayer {
+  --minBlockSize: 4rem;
+  --maxBlockSize: auto;
+  --minInlineSize: 5rem;
+  --maxInlineSize: 100vh;
+  padding-inline: 1.5rem;
+  color: var(--gray20);
+  position: relative;
+}
+
+.calendar-weekLayer {
+  min-block-size: 700px;
+}
+

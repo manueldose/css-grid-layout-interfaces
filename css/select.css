@@ -1,0 +1,14 @@
+.select {
+  border: 1px solid var(--gray20);
+  padding-inline: .75rem;
+  padding-block: .5rem;
+  border-radius: .25rem;
+  padding-inline-end: 2rem;
+  font: var(--button-button);
+
+  /*ajustar flechita del select*/
+  appearance: none;
+  background-image: url(../icons/Icon=chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right .5rem center;
+}

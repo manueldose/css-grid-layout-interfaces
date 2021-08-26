@@ -1,0 +1,83 @@
+.calendarDayLayer {
+  margin: 0;
+  padding-block-end: 1.75rem;
+  position: sticky;
+  inset-block-start: 0;
+  background: var(--white);
+  border-block-end: 1px solid currentColor;
+  margin-inline-start: 3rem;
+  margin-block-start: 1.5rem;
+  margin-block-end: -.5rem;
+}
+
+.calendarDayLayer a {
+  /* border: 1px solid red; */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: currentColor;
+  outline: none;
+}
+
+.calendarDayLayer a:hover span:nth-of-type(2),
+.calendarDayLayer a:focus span:nth-of-type(2) {
+  background: var(--gray10);
+}
+
+.calendarDayLayer.is-selected a:hover span:nth-of-type(2),
+.calendarDayLayer.is-selected a:focus span:nth-of-type(2) {
+  background: var(--blue30);
+}
+
+.calendarDayLayer.is-selected a:active {
+  transform: scale(.9);
+}
+
+.calendarDayLayer span:nth-of-type(1) {
+  font: var(--body1-regular);
+}
+
+.calendarDayLayer span:nth-of-type(2) {
+  font: var(--subtitle-subtitle1);
+  line-height: 2.75rem;
+  inline-size: 2.75rem;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.calendarDayLayer::before {
+  content: '';
+  inline-size: 1px;
+  block-size: 2rem;
+  background: currentColor;
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+}
+
+.calendarDayLayer.is-selected span:nth-of-type(1) {
+ color: var(--blue20);
+}
+
+.calendarDayLayer.is-selected span:nth-of-type(2) {
+  background: var(--blue10);
+  color: var(--white);
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --gray50: #fffffe;
+    --gray10: #c1c1c1;
+    --white: #222222;
+  }
+
+  .calendarDayLayer.is-selected a:hover span:nth-of-type(1),
+  .calendarDayLayer.is-selected a:hover span:nth-of-type(2) {
+    /* color:var(--gray10); */
+    color: currentColor;
+  }
+  .calendarDayLayer.is-selected a:hover span:nth-of-type(2) {
+    background: var(--blue30);
+  }
+}

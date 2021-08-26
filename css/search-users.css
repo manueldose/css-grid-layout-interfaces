@@ -1,0 +1,66 @@
+.searchUsers{
+  position: relative;
+  background: var(--gray10);
+  max-inline-size: 12.35rem;
+  border-radius: .25rem;
+}
+
+.search {
+
+}
+
+.search i {
+  position: absolute;
+  font-size: 1rem;
+  inset-inline-start: 1rem;
+  inset-block-start: calc(50% - .5rem);
+  block-size: 1rem;
+  color: var(--gray50);
+}
+
+.search input {
+  /* border: 1px solid red; */
+  font: var(--body1-regular);
+  color: var(--gray20);
+  background: transparent;
+  border: none;
+  outline: 0;
+  border-radius: .25rem;
+  border-bottom: 1px solid transparent;
+  padding: 0;
+  padding-inline-start: 2.5rem;
+  padding-block: .625rem;
+  inline-size: 100%;
+}
+
+.search input:focus {
+  color: var(--gray50);
+  box-shadow: 0 2px 0 var(--blue10);
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --gray50: #fffffe;
+    --gray10: #c1c1c1;
+    --white: #222222;
+  }
+
+  .search input {
+    color: var(--white);
+    background: var(--gray50);
+  }
+
+  .search input:focus {
+    color: var(--white);
+    box-shadow: 0 3px 0 var(--blue10);
+  }
+
+  .search i {
+    color: var(--white);
+  }
+
+}
+
+
+

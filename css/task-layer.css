@@ -1,0 +1,19 @@
+.task-layer {
+  /* border: 1px solid red; */
+  background: var(--blue10);
+  color: var(--white);
+  border-radius: .25rem;
+  padding-inline: 1rem;
+  padding-block: .625rem;
+  overflow: hidden;
+  font: var(--body2-medium);
+  /*Estas tres lineas siguientes son para interlineado dentro de las tareas*/
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.task-layer p {
+  margin: 0;
+  white-space: nowrap;
+}

@@ -1,0 +1,62 @@
+
+.buttons {
+  border: 1px solid transparent;
+  /* padding-inline: .25rem; */
+  /* padding-block: .125rem; */
+  display: inline-block;
+  font: var(--button-button);
+  text-decoration: none;
+  cursor: pointer;
+  color: currentColor;
+  background: transparent;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.buttons:active {
+  transform: scale(.9);
+}
+
+.buttons.is-primary {
+  background: var(--blue10);
+  color: var(--white);
+}
+
+.buttons.is-secondary {
+  border: 1px solid var(--gray20);
+}
+
+.buttons.is-primary:hover,
+.buttons.is-primary:focus {
+  background: var(--blue30);
+}
+
+.buttons:hover,
+.buttons:focus,
+.buttons.is-secondary:hover,
+.buttons.is-secondary:focus,
+.buttons.is-rounded:hover,
+.buttons.is-rounded:focus,
+.buttons.is-compact:hover,
+.buttons.is-compact:focus {
+  background: var(--gray10);
+}
+
+
+.buttonSmall.is-square {
+  border-radius: 20%;
+  padding: .5rem;
+}
+
+.buttons i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+
+.buttons i, .buttons span {
+  vertical-align: middle;
+}
+
+.buttons.is-shadowed {
+  box-shadow: 1.0719px 30.9815px 92px rgba(0, 0, 0, 0.0274815), 0.412881px 11.9336px 29.3037px rgba(0, 0, 0, 0.0425185), 0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
+}

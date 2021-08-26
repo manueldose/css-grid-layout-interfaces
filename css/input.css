@@ -1,0 +1,101 @@
+.input {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input i {
+  font-size: 1.5rem;
+}
+
+.input.is-outstanding input {
+  /* border: 1px solid blue; */
+  font: var(--subtitle-subtitle1);
+}
+
+.input-body {
+  display: flex;
+  flex: 1;
+  /* border: 1px solid green; */
+
+}
+
+.input input,
+.input textarea {
+  flex: 1;
+  font: var(--body1-regular);
+  padding-block: .625rem;
+  padding-inline: .75rem;
+  border: none;
+  outline: none;
+  border-radius: .25rem;
+}
+
+.input input:focus,
+.input input:hover,
+.input textarea:focus,
+.input textarea:hover {
+  background-color: var(--gray10);
+}
+
+.input input:focus, input textarea:focus {
+  box-shadow: 0 2px 0 var(--blue10);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --gray50: #fffffe;
+    --gray20: #c1c1c1;
+    --white: #222222;
+  }
+
+  .button.is-dark {
+    border: 1px solid var(--gray20);
+    color: var(--gray50);
+  }
+
+  .button.is-dark:hover,
+  .button.is-dark:focus {
+    /* border: 1px solid var(--gray20); */
+    color: var(--white);
+  }
+
+  .button.is-primary {
+    background: var(--blue20);
+  }
+
+  .button.is-primary:hover,
+  .button.is-primary:focus {
+    color: var(--gray50);
+  }
+
+  .input i {
+    /* font-size: 1.5rem; */
+    color: var(--gray50);
+  }
+
+  .input input:focus,
+  .input textarea:focus {
+    background-color: rgb(56, 56, 61);
+    color: var(--gray50);
+  }
+
+
+  .input input:hover,
+  .input textarea:hover {
+    background-color: rgb(68, 68, 73);
+    color: var(--gray50);
+  }
+
+  .input input,
+  .input textarea {
+
+    background-color: rgb(56, 56, 61);
+    color: rgb(121, 121, 130);
+  }
+
+  .input input:focus, input textarea:focus {
+    box-shadow: 0 2px 0 var(--blue20);
+  }
+
+}
